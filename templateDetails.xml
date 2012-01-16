@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+	<name>fpp</name>
+	<creationDate>January 2012</creationDate>
+	<author>Michael McCarty</author>
+	<authorEmail>michael@beardon.com</authorEmail>
+	<authorUrl>http://www.beardon.com</authorUrl>
+	<copyright>Copyright (C) 2012 blah</copyright>
+	<license>none</license>
+	<version>0.1</version>
+	<description>...</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>navbar</position>
+		<position>content-top</position>
+		<position>left</position>
+		<position>foot</position>
+	</positions>
+
+
+
+	<config>
+	
+	</config>
+</extension>
