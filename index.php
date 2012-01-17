@@ -2,8 +2,7 @@
 /**
  * @version                $Id: index.php 21518 2011-06-10 21:38:12Z chdemko $
  * @package                Joomla.Site
- * @subpackage	Templates.beez_20
- * @copyright        Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.
+ * @subpackage	Templates.fpp
  * @license                GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -27,7 +26,9 @@ defined('_JEXEC') or die;
 
 	<div id="head">
 		<div id="banner">
-			<img src="/templates/fpp/images/header.jpg" alt="IFSTA" />
+			<a href="/">
+				<img src="/templates/fpp/images/header.jpg" alt="IFSTA" />
+			</a>
 		</div>
 		
 		<div id="navbar">
@@ -42,6 +43,7 @@ defined('_JEXEC') or die;
 	
 	
 	<div id="content">
+		<jdoc:include type="modules" name="content-top" />
 		<jdoc:include type="message" />
 		<jdoc:include type="component" />
 		<div style="clear: both;"></div>
