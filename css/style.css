@@ -1,4 +1,14 @@
+.category-module h4 {
+	margin: 0px;
+}
 
+ul.pagenav, ul.category-module {
+	padding: 0px;
+}
+
+.pagenav li, .article-info li, .category-module li {
+	list-style-type: none;
+}
 
 .navbar ul li  {
 	display: inline;
@@ -59,4 +69,8 @@ div.pagination ul li.pagination-end, div.pagination ul li.pagination-next {
 
 dd {
 	margin-bottom: 15px;
+}
+
+.navbar .hidden:parent {
+	display: none;
 }

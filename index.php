@@ -62,9 +62,10 @@ defined('_JEXEC') or die;
 		</div>
 		<script language="javascript" type="text/javascript">
 			$(function(){
+				$(".navbar a.hidden:parent").remove();
 				$(".navbar ul").buttonset({icons: {primary: "ui-icon-home"}});
 				$('.navbar ul li a:contains("Home")').button( "option", "icons", {primary:'ui-icon-home'});
-				$('.navbar ul li a:contains("Products")').button( "option", "icons", {primary:'ui-icon-tag'});
+				$('.navbar ul li a:contains("Shop")').button( "option", "icons", {primary:'ui-icon-tag'});
 				$('.navbar ul li a:contains("Resource")').button( "option", "icons", {primary:'ui-icon-lightbulb'});
 				$('.navbar ul li a:contains("News")').button( "option", "icons", {primary:'ui-icon-script'});
 				$('.navbar ul li a:contains("Research")').button( "option", "icons", {primary:'ui-icon-help'});
