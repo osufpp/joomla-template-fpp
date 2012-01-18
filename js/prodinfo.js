@@ -2,6 +2,7 @@ $(function(){
 
 	var p = $("div.item-page div.product_info");
 	if(p) {
+		p.find('.product_price').html("Loading...");
 		var pid = p.find('.prodid').text();
 		var oid = $('.oscid').text();
 		$.ajax({
@@ -29,9 +30,10 @@ $(function(){
 					} else {
 						p.append('<span class="unavailable">Unavailable</span>');
 					}
-					p.append('<a class="btn" href="http://192.168.1.146/rpeters/shop/ext/tbg_api/ifsta_product.php?prod_id='+pid+'">\
-									<button type="button" class="cartbtn">Product Info</button>\
-								</a>');
+					p.append('<form method="get" action="http://192.168.1.146/rpeters/shop/ext/tbg_api/ifsta_product.php">\
+									<input type="hidden" name="prod_id" value="'+pid+'" />\
+									<input type="submit" class="cartbtn" value="Product Info"/>\
+								</form>');
 				}
 			},
 			error: function() {

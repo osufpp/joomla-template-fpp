@@ -22,9 +22,10 @@
 
 	<positions>
 		<position>navbar</position>
+		<position>topright</position>
 		<position>content-top</position>
 		<position>left</position>
-		<position>foot</position>
+		<position>right</position>
 	</positions>
 	
 	<config>
