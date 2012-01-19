@@ -6,6 +6,13 @@ ul.pagenav, ul.category-module {
 	padding: 0px;
 }
 
+ul.pagenav li {
+	display: inline;
+}
+ul.pagenav li.pagenav-next {
+	float: right;
+}
+
 .pagenav li, .article-info li, .category-module li {
 	list-style-type: none;
 }
