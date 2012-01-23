@@ -50,6 +50,7 @@ defined('_JEXEC') or die;
 			
 			<div id="columnLeft" class="grid_4 pull_16">
 				<jdoc:include type="modules" name="left" style="normal" />
+				<jdoc:include type="modules" name="leftmenu" style="nothing" />
 			</div>
 			
 			<div id="columnRight" class="grid_4">
