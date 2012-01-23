@@ -33,5 +33,9 @@ function modChrome_nothing($module, &$params, &$attribs)
 	echo "<div>".$module->content."</div>";
 }
 
+function modChrome_breadcrumbs($module, &$params, &$attribs)
+{
+	echo '<div class="ui-widget-header ui-corner-all infoBoxHeading">'.$module->content."</div>";
+}
 
 ?>

@@ -13,7 +13,16 @@ defined('_JEXEC') or die;
 JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 
 ?>
-<div class="blog<?php echo $this->pageclass_sfx;?>">
+<div class="ui-widget infoBoxContainer blog">
+<?php 
+		if ($this->params->get('show_category_title')) : ?>
+			<h1 class="subheading-category"><?php echo $this->category->title;?></h1>
+		<?php endif; 
+?>
+	<div class="ui-widget-header ui-corner-top infoBoxHeading">
+		<h1></h1>
+	</div>
+	<div class="ui-widget-content ui-corner-bottom productListTable <?php echo $this->pageclass_sfx;?>">
 <?php if ($this->params->get('show_page_heading', 1)) : ?>
 	<h1>
 		<?php echo $this->escape($this->params->get('page_heading')); ?>
@@ -124,4 +133,5 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 		</div>
 <?php  endif; ?>
 
+	</div>
 </div>

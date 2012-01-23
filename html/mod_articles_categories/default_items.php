@@ -10,9 +10,12 @@
 // no direct access
 defined('_JEXEC') or die;
 foreach ($list as $item) :
-
+$class = 'class="';
+if ($_SERVER['PHP_SELF'] == JRoute::_(ContentHelperRoute::getCategoryRoute($item->id))) $class .= 'active';
+if($item == $list[end(array_keys($list))]) $class .= ' last"';
+$class .= '"';
 ?>
-	<li <?php if ($_SERVER['PHP_SELF'] == JRoute::_(ContentHelperRoute::getCategoryRoute($item->id))) echo ' class="active"';?>> <?php $levelup=$item->level-$startLevel -1; ?>
+	<li <?php if($class != 'class=""') { echo $class; } ?>> <?php $levelup=$item->level-$startLevel -1; ?>
 		<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($item->id)); ?>">
 			<span>
 				<?php echo $item->title;?>

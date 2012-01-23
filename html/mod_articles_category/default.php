@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 <ul class="category-module<?php echo $moduleclass_sfx; ?> treeview">
 <?php if ($grouped) : ?>
 	<?php foreach ($list as $group_name => $group) : ?>
-	<li>
+	<li <?php>
 		<h<?php echo $item_heading; ?>><?php echo $group_name; ?></h<?php echo $item_heading; ?>>
 		<ul>
 			<?php foreach ($group as $item) : ?>
@@ -98,7 +98,7 @@ defined('_JEXEC') or die;
 	<?php endforeach; ?>
 <?php else : ?>
 	<?php foreach ($list as $item) : ?>
-	    <li>
+	    <li <?php if($item == $list[end(array_keys($list))]) echo ' class="last"'; ?>>
 	   	<h<?php echo $item_heading; ?>>
 	   	<?php if ($params->get('link_titles') == 1) : ?>
 		<a class="mod-articles-category-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>">

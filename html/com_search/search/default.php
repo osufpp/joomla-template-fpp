@@ -12,6 +12,7 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="search<?php echo $this->pageclass_sfx; ?>">
+<h1>Search Results</h1>
 	<div class="ui-widget infoBoxContainer">
 	
 <?php //if ($this->params->get('show_page_heading', 1)) : ?>

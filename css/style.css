@@ -2,6 +2,16 @@
 	margin: 0px;
 }
 
+.navbar .hidden {
+	display: none;
+}
+
+ul.menu {
+	margin: 0px;
+	margin-top: 15px;
+	margin-right: 7px;
+}
+
 ul.pagenav, ul.category-module {
 	padding: 0px;
 }
@@ -19,6 +29,10 @@ ul.pagenav li.pagenav-next {
 
 .navbar ul li  {
 	display: inline;
+}
+
+div.breadcrumbs {
+	padding-left: 8px;
 }
 
 div.item-page .product_info {
@@ -78,6 +92,28 @@ dd {
 	margin-bottom: 15px;
 }
 
+input.inputbox {
+	width: 450px;
+	height: 20px;
+	margin-right: 3px;
+}
+
 .navbar .hidden:parent {
 	display: none;
+}
+
+.pagination-start a:before {
+	content: "<< ";
+}
+
+.pagination-prev a:before {
+	content: "< ";
+}
+
+.pagination-next a:after {
+	content: " >";
+}
+
+.pagination-end a:after {
+	content: " >>";
 }
