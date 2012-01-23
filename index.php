@@ -76,7 +76,7 @@ defined('_JEXEC') or die;
 				$('.navbar ul li a:contains("E-Learning")').button( "option", "icons", {primary:'ui-icon-star'});
 				$('.navbar ul li a:contains("About Us")').button( "option", "icons", {primary:'ui-icon-person'});
 				
-				if($("#ul#slideshow")) {
+				if($("ul#slideshow")) {
 					$("ul#slideshow").slideshow();
 				}
 			});

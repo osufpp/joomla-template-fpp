@@ -13,9 +13,7 @@ $(function(){
 				if(!d) {
 					p.html('Something went wrong.');
 				}
-				else {
-					console.log(d);
-					
+				else {					
 					p.html('Price: <span>$'+d.price+'</span>');
 					if(d.ISBN10) 	{ p.append('<div>ISBN10: '+d.ISBN10+'</div>'); 	}
 					if(d.ISBN13) 	{ p.append('<div>ISBN13: '+d.ISBN13+'</div>'); 	}
