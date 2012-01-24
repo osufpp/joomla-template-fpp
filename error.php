@@ -5,7 +5,6 @@ defined('_JEXEC') or die;
 <!DOCTYPE html>
 <html>
 	<head>
-			<jdoc:include type="head" />
 			<!-- <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" /> -->
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/960_24_col.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/stylesheet.css" type="text/css" media="screen,projection" />
@@ -13,10 +12,6 @@ defined('_JEXEC') or die;
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/jquery-ui-1.8.6.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/style.css" type="text/css" media="screen,projection" />
 			
-			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-			<script type="text/javascript" src="/templates/fpp/js/prodinfo.js"></script>
-			<script type="text/javascript" src="/templates/fpp/js/jquery.treeview.js"></script>
-			<script type="text/javascript" src="/templates/fpp/js/jquery-ui-1.8.6.min.js"></script>
 	</head>
 
 	<body>
@@ -29,9 +24,7 @@ defined('_JEXEC') or die;
 					</a>
 				</div>
 				<div id="HeaderRight">
-					<jdoc:include type="modules" name="navbar" style="navbar" />
 					<div style="clear: both; float: right; margin-top: 35px;">
-						<jdoc:include type="modules" name="topright" style="nothing" />
 					</div>
 				</div>
 			</div>
@@ -40,8 +33,8 @@ defined('_JEXEC') or die;
 				
 				<div class="error">
 					<h2><?php echo "Error ".$this->error->getCode()." : ".$this->error->getMessage() ?></h2>
-					<p>A nice error message should appear here. I'll let someone else write it. <br />
-					<a href="/">Return to Index</a></p>
+					<p>An error has occured. The page you're looking for may have been moved or deleted, or the site could be experiencing technical issues.</p>
+					<p><a href="/">Return to Index</a></p>
 				</div>
 
 			</div>

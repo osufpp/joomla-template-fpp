@@ -117,3 +117,20 @@ input.inputbox {
 .pagination-end a:after {
 	content: " >>";
 }
+
+div.imgcaption {
+	text-align: center;
+	margin: 10px;
+}
+
+div.imgcaption img {
+	margin: auto;
+}
+
+div.imgcaption p {
+	text-align: left;
+	width: 200px;
+}
+
+.left { float: left; }
+.right { float: right; }
