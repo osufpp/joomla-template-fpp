@@ -43,6 +43,10 @@ div.item-page .product_info {
 	margin-left: 5px;
 }
 
+img.product_image {
+	float: left;
+}
+
 div.blog .product_info {
 	display: none;
 }
@@ -134,3 +138,20 @@ div.imgcaption p {
 
 .left { float: left; }
 .right { float: right; }
+
+.products-list {
+	padding: 10px;
+}
+
+.products-list ul {
+	list-style-type: none;
+}
+
+.products-list ul, .products-list li {
+	padding: 0px;
+	margin: 0px;
+}
+
+.products-list li {
+	margin: 10px 0px;
+}
