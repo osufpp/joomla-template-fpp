@@ -57,10 +57,8 @@ defined('_JEXEC') or die;
 				<jdoc:include type="modules" name="right" style="normal" />
 			</div>
 			
-			<div class="grid_24 footer">
-				<p align="center">Copyright &copy; 2012 <a href="http://ifsta.org/">Ifsta</a>
-				<br />Powered by <a href="http://www.beardon.com" target="_blank">Beardon Services, Inc.</a>
-				</p>
+			<div class="grid_24 footer" style="text-align: center;">
+				<p>&copy; COPYRIGHT 2012, THE BOARD OF REGENTS, OKLAHOMA STATE UNIVERSITY. ALL RIGHTS RESERVED</p>
 			</div>
 		
 		

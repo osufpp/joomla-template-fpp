@@ -27,8 +27,13 @@ ul.pagenav li.pagenav-next {
 	list-style-type: none;
 }
 
-.navbar ul li  {
+.navbar li  {
 	display: inline;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px 15px;
+    font-size: 16px;
 }
 
 div.breadcrumbs {
@@ -154,4 +159,8 @@ div.imgcaption p {
 
 .products-list li {
 	margin: 10px 0px;
+}
+
+ul.weblinks {
+    padding-left: 20px;
 }
