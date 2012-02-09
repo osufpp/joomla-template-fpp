@@ -15,6 +15,7 @@ defined('_JEXEC') or die;
 			
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 			<script type="text/javascript" src="/templates/fpp/js/prodinfo.js"></script>
+			<script type="text/javascript" src="/templates/fpp/js/chapterlists.js"></script>
 			<script type="text/javascript" src="/templates/fpp/js/jquery.treeview.js"></script>
 			<script type="text/javascript" src="/templates/fpp/js/jquery-ui-1.8.6.min.js"></script>
 			

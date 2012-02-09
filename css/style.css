@@ -52,6 +52,10 @@ div.breadcrumbs {
 	padding-left: 8px;
 }
 
+div.blog .product_info {
+    display: none;
+}
+
 div.item-page .product_info {
 	float: right;
 	clear: none;
@@ -62,10 +66,6 @@ div.item-page .product_info {
 
 img.product_image {
 	float: left;
-}
-
-div.blog .product_info {
-	display: none;
 }
 
 a.btn, a.btn:hover, a.btn:visited {
@@ -176,4 +176,15 @@ div.imgcaption p {
 ul.weblinks {
     list-style-type: none;
     padding-left: 8px;
+}
+
+#chapterlist {
+    border: 2px solid #650808;
+    padding: 5px;
+    width: 60%;
+}
+
+#chapterlist_header {
+    margin-left: 25px;
+    cursor: pointer;
 }
