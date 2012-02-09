@@ -56,10 +56,37 @@ defined('_JEXEC') or die;
 			<div id="columnRight" class="grid_4">
 				<jdoc:include type="modules" name="right" style="normal" />
 			</div>
-			
-			<div class="grid_24 footer" style="text-align: center;">
-				<p>&copy; COPYRIGHT 2012, THE BOARD OF REGENTS, OKLAHOMA STATE UNIVERSITY. ALL RIGHTS RESERVED</p>
-			</div>
+
+            
+            <div class="grid_24">
+
+                <div class="grid_5">
+                    <p align="center">
+                        <a href="http://www.okstate.edu/" target="_blank">
+                            <img src="/images/icons/tb_okst.png" alt="Oklahoma State University Main Website">
+                        </a>
+                        <a href="http://mars.ifsta.org/" target="_blank">
+                            <img src="/images/icons/tb_fpplog.png" alt="OSU Fire Protection Publications Main Website">
+                        </a>
+                    </p>
+                </div>
+
+                <div class="grid_4 push_15">
+                    <p align="center">
+                        <a href="http://www.facebook.com/ifsta" target="_blank">
+                            <img src="/images/icons/tb_bfook.png" alt="IFSTA Facebook Page">
+                        </a>
+                        <a href="https://twitter.com/#!/IFSTA" target="_blank">
+                            <img src="/images/icons/tb_twif.png" alt="IFSTA Twitter Account">
+                        </a>
+                    </p>
+                </div>
+
+                <div class="grid_24 footer">
+                    <p align="center">© COPYRIGHT 2012, THE BOARD OF REGENTS, OKLAHOMA STATE UNIVERSITY. ALL RIGHTS RESERVED</p>
+                </div>
+
+            </div>
 		
 		
 		</div>
