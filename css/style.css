@@ -171,5 +171,6 @@ div.imgcaption p {
 }
 
 ul.weblinks {
+    list-style-type: none;
     padding-left: 20px;
 }
