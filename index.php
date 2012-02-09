@@ -58,7 +58,7 @@ defined('_JEXEC') or die;
 			</div>
 
             
-            <div class="grid_24">
+            <div class="grid_24" id="footer">
 
                 <div class="grid_5">
                     <p align="center">
