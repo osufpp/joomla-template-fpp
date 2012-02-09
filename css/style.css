@@ -1,3 +1,12 @@
+
+body {
+    background: #BBBDBF url("images/full_gradient.png") repeat-y center;
+    color: #000;
+    margin: 0px;
+    font-size: 11px;
+    font-family: Lucida Grande, Lucida Sans, Verdana, Arial, sans-serif;
+}
+
 .category-module h4 {
 	margin: 0px;
 }
