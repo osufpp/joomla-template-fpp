@@ -13,7 +13,7 @@ function modChrome_normal($module, &$params, &$attribs)
 				<?php echo $module->content; ?>
 			</div>
 			<?php } else { ?>
-			<div class="ui-widget-header ui-corner-all infoBoxHeading"><?php echo $module->content; ?></div>
+			<div class="ui-widget-content ui-corner-all infoBoxHeading"><?php echo $module->content; ?></div>
 			<?php } ?>
 		</div>
 	<?php endif;
