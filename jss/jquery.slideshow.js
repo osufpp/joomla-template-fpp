@@ -5,8 +5,7 @@
 			'interval':		5000
 		});
 		
-		var lis = this.find("li");
-		var spd = 'slow';
+		var spd = 2500;
 		/*
 		var interval = setInterval(function(ul){
 			if(ul) { //this doesn't work in IE as of 8.
