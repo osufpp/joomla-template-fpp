@@ -7,7 +7,7 @@ $(function(){
 		var pid = p.find('.prodid').text();
 		var oid = $('.oscid').text();
 		$.ajax({
-			url: link + '/shop/ext/tbg_api/product_info.php?cb=?&prod_id='+pid,
+			url: link + '/ext/tbg_api/product_info.php?cb=?&prod_id='+pid,
 			dataType: 'json',
 			timeout: 10000,
 			success: function(d) {
