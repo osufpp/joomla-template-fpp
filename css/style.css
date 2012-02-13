@@ -178,3 +178,7 @@ ul.weblinks {
     margin-left: 25px;
     cursor: pointer;
 }
+
+.borderless * {
+    border: none;
+}

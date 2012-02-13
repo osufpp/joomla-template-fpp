@@ -6,10 +6,10 @@ defined('_JEXEC') or die;
 function modChrome_normal($module, &$params, &$attribs)
 {
 	if (!empty ($module->content)) : ?>
-		<div class="ui-widget infoBoxContainer">
+		<div class="ui-widget infoBoxContainer <?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
 			<?php if($module->showtitle) { ?>
 			<div class="ui-widget-header ui-corner-top infoBoxHeading"><?php echo $module->title; ?></div>
-			<div class="ui-widget-content ui-corner-bottom infoBoxContents<?php echo htmlspecialchars($params->get('moduleclass_sfx')); ?>">
+			<div class="ui-widget-content ui-corner-bottom infoBoxContents">
 				<?php echo $module->content; ?>
 			</div>
 			<?php } else { ?>
