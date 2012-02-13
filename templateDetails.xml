@@ -16,6 +16,7 @@
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
+		<folder>jss</folder>
 		<filename>index.html</filename>
 		<filename>index.php</filename>
 		<filename>error.php</filename>
