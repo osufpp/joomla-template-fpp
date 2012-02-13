@@ -110,10 +110,6 @@ input.inputbox {
 	margin-right: 3px;
 }
 
-.navbar .hidden:parent {
-	display: none;
-}
-
 .pagination-start a:before {
 	content: "<< ";
 }
