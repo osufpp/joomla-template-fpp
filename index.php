@@ -45,6 +45,7 @@ defined('_JEXEC') or die;
 			</div>
 			
 			<div id="bodyContent" class="grid_16 push_4">
+                <jdoc:include type="modules" name="article-top" style="normal" />
 				<jdoc:include type="message" />
                 <jdoc:include type="component" />
 			</div>

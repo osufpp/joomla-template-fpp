@@ -23,7 +23,7 @@ $(function(){
 					if(d.year) 		{ p.append('<div>Year: '+d.year+'</div>'); 		}
 					
 					if(d.availability) {
-						p.append('<form method="post" action="'+ link +'/shop/ext/tbg_api/buy_ifsta_product.php?prod_id='+pid+'">\
+						p.append('<form method="post" action="'+ link +'/ext/tbg_api/buy_ifsta_product.php?prod_id='+pid+'">\
 									<input type="submit" class="cartbtn button" value="Add to Cart" />\
 								</form>');
 					} else {

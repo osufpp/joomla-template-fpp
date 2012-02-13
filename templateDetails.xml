@@ -27,6 +27,7 @@
 		<position>navbar</position>
 		<position>topright</position>
 		<position>content-top</position>
+		<position>article-top</position>
 		<position>left</position>
 		<position>leftmenu</position>
 		<position>right</position>
