@@ -35,7 +35,7 @@ defined('_JEXEC') or die;
 				</div>
 				<div id="HeaderRight">
 					<jdoc:include type="modules" name="navbar" style="navbar" />
-					<div style="clear: both; float: right; margin-top: 35px;">
+					<div style="clear: both; float: right; margin-top: 76px;">
 						<jdoc:include type="modules" name="topright" style="nothing" />
 					</div>
 				</div>
