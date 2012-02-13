@@ -3,12 +3,12 @@
 <extension version="1.7" type="template" client="site">
 	<name>fpp</name>
 	<creationDate>January 2012</creationDate>
-	<author>Michael McCarty</author>
+	<author>Beardon Services, Inc.</author>
 	<authorEmail>michael@beardon.com</authorEmail>
 	<authorUrl>http://www.beardon.com</authorUrl>
-	<copyright>Copyright (C) 2012 blah</copyright>
-	<license>none</license>
-	<version>0.1</version>
+	<copyright></copyright>
+	<license></license>
+	<version>0.2</version>
 	<description>...</description>
 
 	<files>
