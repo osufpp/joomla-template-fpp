@@ -166,8 +166,11 @@ div.imgcaption p {
 
 ul.weblinks {
     list-style-type: none;
-    margin: 4px 0px;
     padding-left: 8px;
+}
+
+ul.weblinks li {
+    margin: 4px 0px;
 }
 
 #chapterlist {
