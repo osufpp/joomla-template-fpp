@@ -1,7 +1,7 @@
 $(function(){
 
 	var p = $("div.item-page div.product_info");
-    var link = "http://shop.test.ifsta.org";
+    var link = "https://shop.ifsta.org";
 	if(p) {
 		p.find('.product_price').html("Loading...");
 		var pid = p.find('.prodid').text();
