@@ -94,15 +94,7 @@ defined('_JEXEC') or die;
 		<script language="javascript" type="text/javascript">
 			$(function(){
 				$(".navbar a.hidden:parent").remove();
-				$(".navbar ul").buttonset({icons: {primary: "ui-icon-home"}});
-				$('.navbar ul li a:contains("Home")').button( "option", "icons", {primary:'ui-icon-home'});
-				$('.navbar ul li a:contains("Shop")').button( "option", "icons", {primary:'ui-icon-tag'});
-				$('.navbar ul li a:contains("Resource")').button( "option", "icons", {primary:'ui-icon-lightbulb'});
-				$('.navbar ul li a:contains("News")').button( "option", "icons", {primary:'ui-icon-script'});
-				$('.navbar ul li a:contains("Research")').button( "option", "icons", {primary:'ui-icon-help'});
-				$('.navbar ul li a:contains("E-Learning")').button( "option", "icons", {primary:'ui-icon-star'});
-				$('.navbar ul li a:contains("About Us")').button( "option", "icons", {primary:'ui-icon-person'});
-				
+                $(".button").button();
 				if($("ul#slideshow")) {
 					$("ul#slideshow").slideshow();
 				}

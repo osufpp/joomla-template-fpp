@@ -24,16 +24,17 @@ $(function(){
 					
 					if(d.availability) {
 						p.append('<form method="post" action="'+ link +'/shop/ext/tbg_api/buy_ifsta_product.php?prod_id='+pid+'">\
-									<input type="submit" class="cartbtn" value="Add to Cart" />\
+									<input type="submit" class="cartbtn button" value="Add to Cart" />\
 								</form>');
 					} else {
 						p.append('<span class="unavailable">Unavailable</span>');
 					}
 					p.append('<form method="get" action="'+ link +'/ext/tbg_api/ifsta_product.php">\
 									<input type="hidden" name="prod_id" value="'+pid+'" />\
-									<input type="submit" class="cartbtn" value="Product Info"/>\
+									<input type="submit" class="cartbtn button" value="Product Info"/>\
 								</form>');
 				}
+                $(".button").button();
 			},
 			error: function() {
 				p.find('.product_price').text('Error loading information.');
