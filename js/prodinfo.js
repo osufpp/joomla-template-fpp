@@ -42,9 +42,9 @@ $(function(){
 
 	}
 
-    $("div#chapterlist_content").hide();
+    $("div#chapterlist").hide();
     $("#chapterlist_header").click(function() {
-        $("#chapterlist_content").toggle(600);
+        $("#chapterlist").toggle(600);
     })
 
 });
