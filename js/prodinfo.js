@@ -15,12 +15,12 @@ $(function(){
 					p.html('Something went wrong.');
 				}
 				else {					
-					p.html('Price: <span>$'+d.price+'</span>');
-					if(d.ISBN10) 	{ p.append('<div>ISBN10: '+d.ISBN10+'</div>'); 	}
-					if(d.ISBN13) 	{ p.append('<div>ISBN13: '+d.ISBN13+'</div>'); 	}
-					if(d.pages) 	{ p.append('<div>'+d.pages+' Pages</div>'); 	}
-					if(d.edition) 	{ p.append('<div>'+d.edition+'</div>'); 		}
-					if(d.year) 		{ p.append('<div>Year: '+d.year+'</div>'); 		}
+					p.html('<strong>Price:</strong> <span>$'+d.price+'</span>');
+					if(d.ISBN10) 	{ p.append('<div><strong>ISBN10:</strong> '+d.ISBN10+'</div>'); 	}
+					if(d.ISBN13) 	{ p.append('<div><strong>ISBN13:</strong> '+d.ISBN13+'</div>'); 	}
+					if(d.pages) 	{ p.append('<div><strong>Pages:</strong> '+d.pages+'</div>'); 	}
+					if(d.edition) 	{ p.append('<div><strong>Edition:</strong> '+d.edition+'</div>'); 		}
+					if(d.year) 		{ p.append('<div><strong>Year:</strong> '+d.year+'</div>'); 		}
 					
 					if(d.availability) {
 						p.append('<form method="post" action="'+ link +'/ext/tbg_api/buy_ifsta_product.php?prod_id='+pid+'">\
