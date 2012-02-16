@@ -182,3 +182,12 @@ ul.weblinks li {
 .borderless * {
     border: none;
 }
+
+ul.dynamic_menu li ul
+{
+    display: none;
+}
+
+ul.dynamic_menu li.active ul {
+    display: block;
+}
