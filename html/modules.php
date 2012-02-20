@@ -19,21 +19,13 @@ function modChrome_normal($module, &$params, &$attribs)
 	<?php endif;
 }
 
-function modChrome_navbar($module, &$params, &$attribs)
-{
-	if (!empty ($module->content)) : ?>
-		<div class="navbar" class="ui-buttonset">
-			<?php echo $module->content; ?>
-		</div>
-	<?php endif;
-}
 
 function modChrome_nothing($module, &$params, &$attribs)
 {
 	echo "<div>".$module->content."</div>";
 }
 
-function modChrome_breadcrumbs($module, &$params, &$attribs)
+function modChrome_navbar($module, &$params, &$attribs)
 {
 	echo '<div class="ui-widget-header ui-corner-all infoBoxHeading">'.$module->content."</div>";
 }

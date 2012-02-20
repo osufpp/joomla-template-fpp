@@ -31,6 +31,7 @@ ul.pagenav, ul.category-module {
 ul.pagenav li {
 	display: inline;
 }
+
 ul.pagenav li.pagenav-next {
 	float: right;
 }
@@ -46,6 +47,13 @@ ul.pagenav li.pagenav-next {
     padding: 0px;
     margin: 0px 15px;
     font-size: 16px;
+}
+
+ul.buttons li {
+    display: inline;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 div.breadcrumbs {
@@ -190,4 +198,13 @@ ul.dynamic_menu li ul
 
 ul.dynamic_menu li.active ul {
     display: block;
+}
+
+div#HeaderRight div {
+    float: right;
+    clear: both;
+}
+
+#HeaderRight div.search {
+    margin-top: 35px;
 }

@@ -25,12 +25,11 @@
 	</files>
 
 	<positions>
-		<position>navbar</position>
 		<position>topright</position>
-		<position>content-top</position>
+		<position>navbar</position>
 		<position>article-top</position>
 		<position>left</position>
-		<position>leftmenu</position>
+		<position>leftmenu</position>       <!-- required for menus to show up right -->
 		<position>right</position>
 	</positions>
 	

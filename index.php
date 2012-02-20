@@ -33,18 +33,14 @@ defined('_JEXEC') or die;
 					</a>
 				</div>
 				<div id="HeaderRight">
-					<jdoc:include type="modules" name="navbar" style="navbar" />
-					<div style="clear: both; float: right; margin-top: 76px;">
 						<jdoc:include type="modules" name="topright" style="nothing" />
-					</div>
 				</div>
 			</div>
 			<div class="grid_24 ui-widget infoBoxContainer">
-					<jdoc:include type="modules" name="content-top" style="breadcrumbs" />
+                <jdoc:include type="modules" name="navbar" style="navbar" />
 			</div>
 			
 			<div id="bodyContent" class="grid_16 push_4">
-                <jdoc:include type="modules" name="article-top" style="normal" />
 				<jdoc:include type="message" />
                 <jdoc:include type="component" />
 			</div>
@@ -88,12 +84,15 @@ defined('_JEXEC') or die;
                 </div>
 
             </div>
-		
-		
+
 		</div>
 		<script language="javascript" type="text/javascript">
 			$(function(){
 				$(".navbar a.hidden:parent").remove();
+                $('#HeaderRight .buttons').buttonset();
+                $('#HeaderRight .buttons li a:contains("Cart")').button( "option", "icons", {primary:'ui-icon-cart'});
+                $('#HeaderRight .buttons li a:contains("Account")').button( "option", "icons", {primary:'ui-icon-person'});
+                $('#HeaderRight .buttons li a:contains("Log In")').button( "option", "icons", {primary:'ui-icon-locked'});
                 $(".button").button();
 				if($("ul#slideshow")) {
 					$("ul#slideshow").slideshow();
