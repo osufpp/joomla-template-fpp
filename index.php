@@ -10,7 +10,6 @@ defined('_JEXEC') or die;
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/stylesheet.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/jquery.treeview.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/jquery-ui-1.8.6.css" type="text/css" media="screen,projection" />
-			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/style.css" type="text/css" media="screen,projection" />
 
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 			<script type="text/javascript" src="/templates/fpp/js/jquery.treeview.js"></script>
@@ -18,6 +17,7 @@ defined('_JEXEC') or die;
 
 			<script type="text/javascript" src="/templates/fpp/jss/jquery.timers.js"></script>
 			<script type="text/javascript" src="/templates/fpp/jss/jquery.slideshow.js"></script>
+            <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/style.css" type="text/css" media="screen,projection" />
             <script type="text/javascript" src="/templates/fpp/js/scripts.js"></script>
             <link rel="stylesheet" type="text/css" href="/templates/fpp/jss/jss.css" />
 	</head>
