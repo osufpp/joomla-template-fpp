@@ -6,25 +6,24 @@ defined('_JEXEC') or die;
 <html>
 	<head>
 			<jdoc:include type="head" />
-			<!-- <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" /> -->
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/960_24_col.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/stylesheet.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/jquery.treeview.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/jquery-ui-1.8.6.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/style.css" type="text/css" media="screen,projection" />
-			
+
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-			<script type="text/javascript" src="/templates/fpp/js/prodinfo.js"></script>
 			<script type="text/javascript" src="/templates/fpp/js/jquery.treeview.js"></script>
 			<script type="text/javascript" src="/templates/fpp/js/jquery-ui-1.8.6.min.js"></script>
-			
+
 			<script type="text/javascript" src="/templates/fpp/jss/jquery.timers.js"></script>
 			<script type="text/javascript" src="/templates/fpp/jss/jquery.slideshow.js"></script>
-			<link rel="stylesheet" type="text/css" href="/templates/fpp/jss/jss.css" />
+            <script type="text/javascript" src="/templates/fpp/js/scripts.js"></script>
+            <link rel="stylesheet" type="text/css" href="/templates/fpp/jss/jss.css" />
 	</head>
 
 	<body>
-	
+
 		<div id="bodyWrapper" class="container_24">
 			<div id="header" class="grid_24">
 				<div id="storeLogo">
@@ -39,22 +38,22 @@ defined('_JEXEC') or die;
 			<div class="grid_24 ui-widget infoBoxContainer">
                 <jdoc:include type="modules" name="navbar" style="navbar" />
 			</div>
-			
+
 			<div id="bodyContent" class="grid_16 push_4">
 				<jdoc:include type="message" />
                 <jdoc:include type="component" />
 			</div>
-			
+
 			<div id="columnLeft" class="grid_4 pull_16">
 				<jdoc:include type="modules" name="left" style="normal" />
 				<jdoc:include type="modules" name="leftmenu" style="nothing" />
 			</div>
-			
+
 			<div id="columnRight" class="grid_4">
 				<jdoc:include type="modules" name="right" style="normal" />
 			</div>
 
-            
+
             <div class="grid_24" id="footer">
 
                 <div class="grid_5">
@@ -86,18 +85,6 @@ defined('_JEXEC') or die;
             </div>
 
 		</div>
-		<script language="javascript" type="text/javascript">
-			$(function(){
-				$(".navbar a.hidden:parent").remove();
-                $('#HeaderRight .buttons').buttonset();
-                $('#HeaderRight .buttons li a:contains("Cart")').button( "option", "icons", {primary:'ui-icon-cart'});
-                $('#HeaderRight .buttons li a:contains("Account")').button( "option", "icons", {primary:'ui-icon-person'});
-                $('#HeaderRight .buttons li a:contains("Log In")').button( "option", "icons", {primary:'ui-icon-locked'});
-                $(".button").button();
-				if($("ul#slideshow")) {
-					$("ul#slideshow").slideshow();
-				}
-			});
-		</script>
+
 	</body>
 </html>
