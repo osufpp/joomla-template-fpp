@@ -74,7 +74,7 @@ $(function(){
         source: function(request, response)
         {
             $.ajax({
-                url: "templates/fpp/autocomplete_searches.php",
+                url: "/templates/fpp/autocomplete_searches.php",
                 dataType: "json",
                 data: {
                     maxRows: 12,
