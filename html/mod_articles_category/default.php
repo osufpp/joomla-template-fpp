@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 <ul class="category-module<?php echo $moduleclass_sfx; ?> treeview">
 <?php if ($grouped) : ?>
 	<?php foreach ($list as $group_name => $group) : ?>
-	<li <?php>
+	<li>
 		<h<?php echo $item_heading; ?>><?php echo $group_name; ?></h<?php echo $item_heading; ?>>
 		<ul>
 			<?php foreach ($group as $item) : ?>
