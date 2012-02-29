@@ -82,11 +82,9 @@ a.btn, a.btn:hover, a.btn:visited {
 	text-decoration: none;
 }
 
-.cartbtn {
+.cartbtn, .prodbtn {
 	display: block;
 	width: 136px;
-	line-height: 20px;
-	padding: 0px 20px;
 	margin: 5px auto;
 	margin-bottom: 0px;
 	font-weight: bold;

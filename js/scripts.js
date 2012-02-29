@@ -39,16 +39,15 @@ $(function(){
                     if(d.pages) 	{ p.append('<div><strong>Pages:</strong> '+d.pages+'</div>'); 	            }
 
                     if(d.availability) {
-                        p.append('<form method="post" action="'+ link +'/ext/tbg_api/buy_ifsta_product.php?prod_id='+pid+'">\
-									<input type="submit" class="cartbtn button" value="Add to Cart" />\
-								</form>');
+                        p.append('<a href="'+ link +'/ext/tbg_api/buy_ifsta_product.php?prod_id='+pid+'" class="cartbtn button ui-priority-primary">Add to Cart</a>');
                     }
-                    p.append('<form method="get" action="'+ link +'/ext/tbg_api/ifsta_product.php">\
-									<input type="hidden" name="prod_id" value="'+pid+'" />\
-									<input type="submit" class="cartbtn button" value="Product Info"/>\
-								</form>');
+                    p.append('<a href="'+ link +'/ext/tbg_api/ifsta_product.php?prod_id='+pid+'" class="prodbtn button ui-priority-primary">Product Info</a>');
                 }
-                $(".button").button();
+
+                // Product cart/info buttons
+                $(".cartbtn").button({ icons: {primary:'ui-icon-cart'}});
+                $(".prodbtn").button({ icons: {primary:'ui-icon-help'}});
+
             },
             error: function() {
                 p.find('.product_price').text('Error loading information.');
