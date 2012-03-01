@@ -1,21 +1,23 @@
-$(function(){
+jQuery.noconflict();
+
+jQuery(function(){
 
 // Top button bar
-    $(".navbar a.hidden:parent").remove();
-    $('#HeaderRight .buttons').buttonset();
-    $('#HeaderRight .buttons li a:contains("Cart")').button( "option", "icons", {primary:'ui-icon-cart'});
-    $('#HeaderRight .buttons li a:contains("Account")').button( "option", "icons", {primary:'ui-icon-person'});
-    $('#HeaderRight .buttons li a:contains("Log In")').button( "option", "icons", {primary:'ui-icon-locked'});
+    jQuery(".navbar a.hidden:parent").remove();
+    jQuery('#HeaderRight .buttons').buttonset();
+    jQuery('#HeaderRight .buttons li a:contains("Cart")').button( "option", "icons", {primary:'ui-icon-cart'});
+    jQuery('#HeaderRight .buttons li a:contains("Account")').button( "option", "icons", {primary:'ui-icon-person'});
+    jQuery('#HeaderRight .buttons li a:contains("Log In")').button( "option", "icons", {primary:'ui-icon-locked'});
 
 
 // Live product information
-    var p = $("div.item-page div.product_info");
+    var p = jQuery("div.item-page div.product_info");
     var link = "https://shop.ifsta.org";
     if(p) {
         p.find('.product_price').html("Loading...");
         var pid = p.find('.prodid').text();
-        var oid = $('.oscid').text();
-        $.ajax({
+        var oid = jQuery('.oscid').text();
+        jQuery.ajax({
             url: link + '/ext/tbg_api/product_info.php?cb=?&prod_id='+pid,
             dataType: 'json',
             timeout: 10000,
@@ -25,7 +27,7 @@ $(function(){
                 }
                 else {
                     if(d.availability) {
-                        p.html('<strong>Price:</strong> <span>$'+d.price+'</span>');
+                        p.html('<strong>Price:</strong> <span>jQuery'+d.price+'</span>');
                     }
                     else {
                         p.html('<span class="unavailable">Unavailable</span>');
@@ -45,8 +47,8 @@ $(function(){
                 }
 
                 // Product cart/info buttons
-                $(".cartbtn").button({ icons: {primary:'ui-icon-cart'}});
-                $(".prodbtn").button({ icons: {primary:'ui-icon-help'}});
+                jQuery(".cartbtn").button({ icons: {primary:'ui-icon-cart'}});
+                jQuery(".prodbtn").button({ icons: {primary:'ui-icon-help'}});
 
             },
             error: function() {
@@ -57,22 +59,22 @@ $(function(){
     }
 
 // Slideshow
-    $(".button").button();
-    if($("ul#slideshow")) {
-        $("ul#slideshow").slideshow();
+    jQuery(".button").button();
+    if(jQuery("ul#slideshow")) {
+        jQuery("ul#slideshow").slideshow();
     }
 
 // Chapter lists
-    $("div#chapterlist").hide();
-    $("#chapterlist_header").click(function() {
-        $("#chapterlist").toggle(600);
+    jQuery("div#chapterlist").hide();
+    jQuery("#chapterlist_header").click(function() {
+        jQuery("#chapterlist").toggle(600);
     })
 
 // Search box autocompletion
-    $("#mod-search-searchword").autocomplete({
+    jQuery("#mod-search-searchword").autocomplete({
         source: function(request, response)
         {
-            $.ajax({
+            jQuery.ajax({
                 url: "/templates/fpp/autocomplete_searches.php",
                 dataType: "json",
                 data: {
@@ -81,7 +83,7 @@ $(function(){
                 },
                 success: function(data)
                 {
-                    response($.map(data.suggestions, function(item)
+                    response(jQuery.map(data.suggestions, function(item)
                     {
                         return {
                             label: item.title,
@@ -105,12 +107,12 @@ $(function(){
         },
         open: function ()
         {
-            $(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+            jQuery(this).removeClass("ui-corner-all").addClass("ui-corner-top");
 
         },
         close: function ()
         {
-            $(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+            jQuery(this).removeClass("ui-corner-top").addClass("ui-corner-all");
         }
 
     });
