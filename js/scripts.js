@@ -27,7 +27,7 @@ jQuery(function(){
                 }
                 else {
                     if(d.availability) {
-                        p.html('<strong>Price:</strong> <span>jQuery'+d.price+'</span>');
+                        p.html('<strong>Price:</strong> <span>$'+d.price+'</span>');
                     }
                     else {
                         p.html('<span class="unavailable">Unavailable</span>');

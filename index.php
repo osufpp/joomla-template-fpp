@@ -27,7 +27,7 @@ defined('_JEXEC') or die;
 		<div id="bodyWrapper" class="container_24">
 			<div id="header" class="grid_24">
 				<div id="storeLogo">
-					<a href="/">
+					<a href="https://shop.ifsta.org/">
 						<img src="/templates/fpp/images/logo.png" alt="Ifsta" />
 					</a>
 				</div>
