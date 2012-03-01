@@ -9,7 +9,7 @@
 	<copyright></copyright>
 	<license></license>
 	<version>0.2</version>
-	<description>...</description>
+	<description>Template designed for FPP by Beardon Services, Inc.</description>
 
 	<files>
 		<folder>css</folder>
@@ -30,7 +30,6 @@
 		<position>navbar</position>
 		<position>article-top</position>
 		<position>left</position>
-		<position>leftmenu</position>       <!-- required for menus to show up right -->
 		<position>right</position>
 	</positions>
 	
