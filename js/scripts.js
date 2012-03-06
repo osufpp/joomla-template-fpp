@@ -34,8 +34,7 @@ jQuery(function(){
                     }
                     p.append('<div><strong>IFSTA Item Number:</strong> '+pid+'</div>');
                     if(d.publisher) { p.append('<div><strong>Publisher:</strong> '+d.publisher+'</div>'); 		}
-                    if(d.ISBN10) 	{ p.append('<div><strong>ISBN10:</strong> '+d.ISBN10+'</div>'); 	        }
-                    if(d.ISBN13) 	{ p.append('<div><strong>ISBN13:</strong> '+d.ISBN13+'</div>'); 	        }
+                    if(d.ISBN13) 	{ p.append('<div><strong>ISBN:</strong> '+d.ISBN13+'</div>'); 	        }
                     if(d.edition) 	{ p.append('<div><strong>Edition:</strong> '+d.edition+'</div>'); 		    }
                     if(d.year) 		{ p.append('<div><strong>Year:</strong> '+d.year+'</div>'); 		        }
                     if(d.pages) 	{ p.append('<div><strong>Pages:</strong> '+d.pages+'</div>'); 	            }
