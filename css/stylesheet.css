@@ -1,5 +1,5 @@
 /*
-  $Id: stylesheet.css 78 2011-07-20 19:24:46Z beana $
+  $Id: stylesheet.css 385 2012-03-08 19:29:28Z rpeters $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
@@ -14,18 +14,51 @@
     font-size: 11px;
 }
 
+
 body {
-    background: #fff;
+    background: #BBBDBF;
     color: #000;
     margin: 0px;
     font-size: 11px;
     font-family: Lucida Grande, Lucida Sans, Verdana, Arial, sans-serif;
 }
 
-#bodyWrapper {
+A.nohover:hover {
+    text-decoration: none;
 }
 
-#bodyContent {
+.ifsta_account {
+    font-style: italic;
+    font-weight: bolder
+}
+
+.header_like {
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: normal;
+    margin-bottom: 0;
+    height: 63px;
+    line-height: 63px;
+}
+
+
+
+.navbar li  {
+	display: inline;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px 15px;
+    font-size: 16px;
+}
+
+.top_seller li {
+    list-style-type: none;
+}
+
+
+#bodyContent
+{
 }
 
 #header {
@@ -94,8 +127,8 @@ body {
     line-height: 1.5;
 }
 
-.productListTable tr.alt td {
-    background-color: #ecf6fc;
+.productListTable tr.alt td, div.productListing .alt {
+    background-color: #bdd5ed;
 }
 
 .fieldKey {
@@ -184,6 +217,12 @@ A:hover {
     text-decoration: underline;
 }
 
+A.infoLink
+{
+    color: #0000FF;
+    float: right;
+}
+
 FORM {
     display: inline;
 }
@@ -209,7 +248,8 @@ A.headerNavigation {
 }
 
 A.headerNavigation:hover {
-    color: #ffffff;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 TR.headerError {
@@ -308,6 +348,11 @@ TABLE.productListing {
 
 A.pageResults {
     color: #0000FF;
+}
+
+#noticeable_text {
+    color: #0000FF;
+    font-style: italic;
 }
 
 A.pageResults:hover {
@@ -485,4 +530,49 @@ SPAN.errorText {
 .tbg_debug {
     color: #FF0000;
     background-color: #000000;
+}
+
+div.productListing {
+    position: relative;
+    margin-top: 80px;
+}
+
+div.cartproductListing {
+    position: relative;
+    margin-top: 10px;
+}
+
+
+div.productListing-heading {
+    clear: both;
+}
+
+div.productListing-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+div.productListing-data {
+    padding: 0px;
+    text-align: center;
+}
+div.productListing-data div {
+    margin: 0px;
+    padding: 0px;
+}
+
+p.productListing-name {
+    height: 64px;
+}
+
+div.newProducts {
+    position: relative;
+    text-align: center;
+}
+
+div.newProducts-item {
+    position: relative;
+    width: 33%;
+    display: inline-block;
+    float: left;
 }
