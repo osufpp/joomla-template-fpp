@@ -180,11 +180,10 @@ div.imgcaption p {
 
 ul.weblinks {
     list-style-type: none;
-    padding-left: 5px;
 }
 
 ul.weblinks li {
-    margin: 4px 0px;
+    margin: 0px;
 }
 
 #chapterlist {

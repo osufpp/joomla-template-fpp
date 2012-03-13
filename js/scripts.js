@@ -9,6 +9,8 @@ jQuery(function(){
     jQuery('#HeaderRight .buttons li a:contains("Account")').button( "option", "icons", {primary:'ui-icon-person'});
     jQuery('#HeaderRight .buttons li a:contains("Log In")').button( "option", "icons", {primary:'ui-icon-locked'});
 
+// Make treeviews look nicer
+    jQuery('li:last-child').addClass('last');
 
 // Live product information
     var p = jQuery("div.item-page div.product_info");
