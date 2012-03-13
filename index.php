@@ -60,7 +60,7 @@ defined('_JEXEC') or die;
                         <a href="http://www.okstate.edu/" target="_blank">
                             <img src="/images/icons/tb_okst.png" alt="Oklahoma State University Main Website">
                         </a>
-                        <a href="http://mars.ifsta.org/" target="_blank">
+                        <a href="http://info.ifsta.org/" target="_blank">
                             <img src="/images/icons/tb_fpplog.png" alt="OSU Fire Protection Publications Main Website">
                         </a>
                     </p>
