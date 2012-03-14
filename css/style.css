@@ -69,13 +69,20 @@ div.blog .product_info {
 }
 
 div.item-page .product_info {
-    float: right;
-    clear: none;
-    margin-left: 5px;
+    text-align: left;
 }
 
-img.product_image {
-    float: left;
+div.item-page .product_sidebar {
+    float: right;
+
+}
+
+div.product_image {
+    margin: auto;
+    text-align: center;
+    border: 1px solid #d5d5d5;
+    width: 180px;
+    height: 180px;
 }
 
 a.btn, a.btn:hover, a.btn:visited {
