@@ -2,6 +2,9 @@ jQuery.noConflict();
 
 jQuery(function(){
 
+jQuery('.hidden').hide();
+
+
 // Top button bar
     jQuery(".navbar a.hidden:parent").remove();
     jQuery('#HeaderRight .buttons').buttonset();
