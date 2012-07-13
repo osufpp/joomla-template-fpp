@@ -31,6 +31,7 @@
 		<position>article-top</position>
 		<position>left</position>
 		<position>right</position>
+		<position>hidden</position>
 	</positions>
 	
 	<config>

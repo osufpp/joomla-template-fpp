@@ -84,6 +84,9 @@ defined('_JEXEC') or die;
             </div>
 
 		</div>
+        <div id="hidden" style="display: none;">
+            <jdoc:include type="modules" name="hidden" style="normal" />
+        </div>
 
 	</body>
 </html>
