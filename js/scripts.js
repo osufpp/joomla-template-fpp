@@ -6,7 +6,7 @@ jQuery('.hidden').hide();
 
 
 // Top button bar
-    jQuery(".navbar a.hidden:parent").remove();
+    jQuery(".navbar a.hidden").parent('li').remove();
     jQuery('#HeaderRight .buttons').buttonset();
     jQuery('#HeaderRight .buttons li a:contains("Cart")').button( "option", "icons", {primary:'ui-icon-cart'});
     jQuery('#HeaderRight .buttons li a:contains("Account")').button( "option", "icons", {primary:'ui-icon-person'});
