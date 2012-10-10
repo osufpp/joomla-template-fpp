@@ -123,4 +123,6 @@ jQuery('.hidden').hide();
 
 
 
+    // ChronoForms field label width
+	jQuery('div.ccms_form_element .nowrap').parent().find('label').addClass('tbg_longlabel');
 });

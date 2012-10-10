@@ -228,3 +228,8 @@ div#HeaderRight div {
 ul.treeview .active > a {
     color: red;
 }
+
+.tbg_longlabel {
+	witdh: auto;
+	margin-right: 15px;
+}
