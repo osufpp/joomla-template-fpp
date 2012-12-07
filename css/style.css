@@ -229,7 +229,11 @@ ul.treeview .active > a {
     color: red;
 }
 
-.tbg_longlabel {
-	width: auto;
+label.tbg_longlabel {
+	width: auto !important;
 	margin-right: 15px;
+}
+
+a.hover_btn img:hover {
+    opacity: 0
 }
