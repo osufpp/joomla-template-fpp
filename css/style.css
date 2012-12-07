@@ -234,6 +234,16 @@ label.tbg_longlabel {
 	margin-right: 15px;
 }
 
+a.hover_btn {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 400px 0px;
+}
+
+a.hover_btn:hover {
+    background-position: 0px 0px;
+}
+
 a.hover_btn img:hover {
     opacity: 0
 }
