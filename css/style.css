@@ -80,7 +80,6 @@ div.item-page .product_sidebar {
 div.product_image {
     margin: auto;
     text-align: center;
-    border: 1px solid #d5d5d5;
     width: 180px;
     height: 180px;
 }
@@ -246,4 +245,12 @@ a.hover_btn:hover {
 
 a.hover_btn img:hover {
     opacity: 0
+}
+
+div.infoBoxContainer.treeview {
+    margin-bottom: 5px;
+}
+
+.borderless .ui-widget-content {
+    background: transparent;
 }
