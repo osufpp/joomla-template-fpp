@@ -254,3 +254,7 @@ div.infoBoxContainer.treeview {
 .borderless .ui-widget-content {
     background: transparent;
 }
+
+.cfdiv_textarea textarea.manual_width {
+    width: auto !important;
+}
