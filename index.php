@@ -78,7 +78,7 @@ defined('_JEXEC') or die;
                 </div>
 
                 <div class="grid_24 footer">
-                    <p align="center">© COPYRIGHT 2012, THE BOARD OF REGENTS, OKLAHOMA STATE UNIVERSITY. ALL RIGHTS RESERVED.</p>
+                    <p align="center">© COPYRIGHT 2013, THE BOARD OF REGENTS, OKLAHOMA STATE UNIVERSITY. ALL RIGHTS RESERVED.</p>
                 </div>
 
             </div>
