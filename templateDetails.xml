@@ -2,13 +2,13 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="1.7" type="template" client="site" method="upgrade">
 	<name>fpp</name>
-	<creationDate>December 2012</creationDate>
+	<creationDate>March 2013</creationDate>
 	<author>Beardon Services, Inc.</author>
 	<authorEmail>michael@beardon.com</authorEmail>
 	<authorUrl>http://www.beardon.com</authorUrl>
 	<copyright></copyright>
 	<license></license>
-	<version>1.2.5</version>
+	<version>1.2.6</version>
 	<description>Template designed for FPP by Beardon Services, Inc.</description>
 
 	<files>
