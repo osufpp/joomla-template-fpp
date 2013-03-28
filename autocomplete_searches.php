@@ -19,7 +19,7 @@ $db =& JFactory::getDBO();
 $term = JRequest::getVar('term');
 $limit = JRequest::getInt('maxRows');
 
-$q = "SELECT title, prodid AS url FROM #__products WHERE match(prodid, title, `desc`) AGAINST ( '*" . $term . "*' IN BOOLEAN MODE )";
+$q = "SELECT title, prodid AS url FROM #__products WHERE match(prodid, title, `desc`) AGAINST ( '*" . $term . "*' IN BOOLEAN MODE ) AND `enabled` = true";
 if ($limit) $q .= " LIMIT " . $limit;
 $db->setQuery($q);
 $suggestions = $db->loadAssocList();
