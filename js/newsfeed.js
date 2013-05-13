@@ -15,6 +15,8 @@
  *    <div id=CLASS_NAME>Loading...</div>
  *
  * The CSS class used in this script is newsfeed.
+ *
+ * Written by Nick Overacker, parts adapted from Google Feeds API example code.
  */
 
 // Set the number of entries to load.
