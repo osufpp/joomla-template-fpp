@@ -15,26 +15,17 @@
  *    <div id=CLASS_NAME>Loading...</div>
  *
  * The CSS class used in this script is newsfeed.
- *
- * Written by Nick Overacker, adapted from Google Feeds API example code.
  */
 
-// Set the number of entries to load.
 var NUM_ENTRIES = 4;
-
-// Set the maximum number of rows.
 var MAX_NUM_ROWS = 2;
-
-// Set the minimum width of the table header.
 var MIN_HEADER_WIDTH = 2;
 
-// Set the preferred number of columns per row.
 // This will grow or shrink as the feedlength
 // and maximum number of rows demand.
 var PREFERRED_NUM_COLUMNS = 2;
 
-// Set the classname.
-// This is also the ID for the container.
+// This will be the CSS class used, as well as the container id.
 var CLASS_NAME = "newsfeed";
 
 google.load("feeds", "1");
@@ -137,16 +128,15 @@ function feedLoaded(result)
    }
 }
 
-function OnLoad()
+///
+// Load the feed, set the number of entries to retrieve, and handle the feed.
+///
+function onLoad()
 {
-   // Create a feed instance that will grab the feed.
+   // EDIT THIS!
    var feed = new google.feeds.Feed("http://rss.cnn.com/rss/cnn_tech.rss");
-
-   // Set the number of entries to retrieve.
    feed.setNumEntries(NUM_ENTRIES);
-
-   // Calling load sends the request off. It requires a callback function.
    feed.load(feedLoaded);
 }
 
-google.setOnLoadCallback(OnLoad);
+google.setOnLoadCallback(onLoad);
