@@ -20,6 +20,7 @@ defined('_JEXEC') or die;
             <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/style.css" type="text/css" media="screen,projection" />
             <script type="text/javascript" src="/templates/fpp/js/scripts.js"></script>
             <link rel="stylesheet" type="text/css" href="/templates/fpp/jss/jss.css" />
+            <script type="text/javascript" src="/templates/fpp/js/GA_download_outbound_links.js"></script>
 	</head>
 
 	<body>
