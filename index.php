@@ -67,13 +67,16 @@ defined('_JEXEC') or die;
                     </p>
                 </div>
 
-                <div class="grid_4 push_15">
+                <div class="grid_5 push_14">
                     <p align="center">
                         <a href="http://www.facebook.com/ifsta" target="_blank">
-                            <img src="/images/icons/tb_bfook.png" alt="IFSTA Facebook Page">
+                            <img src="/images/icons/tb_bfook.png" alt="IFSTA Facebook">
                         </a>
                         <a href="https://twitter.com/#!/IFSTA" target="_blank">
-                            <img src="/images/icons/tb_twif.png" alt="IFSTA Twitter Account">
+                            <img src="/images/icons/tb_twif.png" alt="IFSTA Twitter">
+                        </a>
+                        <a href="http://www.linkedin.com/company/ifsta" target="_blank">
+                            <img src="/images/icons/tb_dinklin.png" alt="IFSTA LinkedIn">
                         </a>
                     </p>
                 </div>
