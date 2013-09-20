@@ -57,7 +57,7 @@ defined('_JEXEC') or die;
             <div class="grid_24" id="footer">
 
                 <div class="grid_5">
-                    <p align="center">
+                    <p align="center" style="float: left;">
                         <a href="http://www.okstate.edu/" target="_blank">
                             <img src="/images/icons/tb_okst.png" alt="Oklahoma State University Main Website">
                         </a>
@@ -68,7 +68,7 @@ defined('_JEXEC') or die;
                 </div>
 
                 <div class="grid_5 push_14">
-                    <p align="center">
+                    <p align="center" style="float: right;">
                         <a href="http://www.facebook.com/ifsta" target="_blank">
                             <img src="/images/icons/tb_bfook.png" alt="IFSTA Facebook">
                         </a>
