@@ -36,7 +36,12 @@ defined('_JEXEC') or die;
 						<jdoc:include type="modules" name="topright" style="nothing" />
 				</div>
 			</div>
-			<div class="grid_24 ui-widget infoBoxContainer">
+			<div class="grid_24 ui-widget infoBoxContainer navbar">
+                <div class="my_icon">
+                    <a href="http://my.ifsta.org/">
+                        <img src="/templates/fpp/images/My_IFSTA_small.png" alt="myIfsta" />
+                    </a>
+                </div>
                 <jdoc:include type="modules" name="navbar" style="navbar" />
 			</div>
 

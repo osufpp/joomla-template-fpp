@@ -44,10 +44,25 @@ ul.pagenav li.pagenav-next {
     list-style-type: none;
 }
 
-.navbar li  {
-    display: inline;
-    list-style-type: none;
+.navbar {
+    height: 44px;
+    line-height: 45px;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+.navbar ul {
     margin: 0px;
+}
+
+.navbar .infoBoxHeading {
+    padding: 0px;
+}
+
+.navbar li  {
+    display: inline-block;
+    height: 100%;
+    list-style-type: none;
     padding: 0px;
     margin: 0px 15px;
     font-size: 16px;
@@ -229,8 +244,8 @@ ul.treeview .active > a {
 }
 
 label.tbg_longlabel {
-	width: auto !important;
-	margin-right: 15px;
+    width: auto !important;
+    margin-right: 15px;
 }
 
 a.hover_btn {
@@ -257,4 +272,11 @@ div.infoBoxContainer.treeview {
 
 .cfdiv_textarea textarea.manual_width {
     width: auto !important;
+}
+
+.my_icon {
+    width: 45px;
+    height: 45px;
+    float: right;
+    margin-right: -1px;
 }
