@@ -68,6 +68,10 @@ ul.pagenav li.pagenav-next {
     font-size: 16px;
 }
 
+ul.navbar {
+    padding-left: 35px;
+}
+
 ul.buttons li {
     display: inline;
     list-style-type: none;
