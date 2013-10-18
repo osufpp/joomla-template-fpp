@@ -139,7 +139,7 @@ jQuery('.hidden').hide();
     var oldGoButton = jQuery('input[value=Go][type=submit]');
     console.log(oldGoButton.length);
     oldGoButton.replaceWith('<input type="image" src="/templates/fpp/images/GoButton.png" alt="Submit search button" class="ui-corner-right" />');
-    jQuery('#go-button').css('vertical-align', '2px');
+    jQuery('#go-button').css('vertical-align', '1px');
 
     // Add distance around lateral edges of myIFSTA icon to
     // see menu bar borders.
