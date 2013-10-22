@@ -121,28 +121,29 @@ jQuery('.hidden').hide();
 
     });
 
-
-
     // ChronoForms field label width
-	jQuery('div.ccms_form_element .nowrap').parent().find('label').addClass('tbg_longlabel');
+    jQuery('div.ccms_form_element .nowrap').parent().find('label').addClass('tbg_longlabel');
 
-    // Redification of search text field.
+    // Red-ification of search text field.
+    var isIE = !!jQuery.browser.msie;
     var searchInput = jQuery('#mod-search-searchword');
     searchInput.css('border', '2px solid rgb(181, 9, 0)')
                .css('border-right', '0')
                .css('margin', '0')
                .css('padding', '0')
-               .css('vertical-align', '12px')
+               .css('vertical-align', (isIE ? '12px' : '11px'))
                .css('height', '25px')
     ;
     searchInput.removeClass('ui-corner-all').addClass('ui-corner-left');
+    console.log('is it msie? ' + isIE);
+    var goButtonSrc = '/templates/fpp/images/' + (isIE ? 'GoButton_3.png' : 'GoButton.png');
     var oldGoButton = jQuery('input[value=Go][type=submit]');
-    console.log(oldGoButton.length);
-    oldGoButton.replaceWith('<input type="image" src="/templates/fpp/images/GoButton.png" alt="Submit search button" class="ui-corner-right" />');
+    oldGoButton.replaceWith('<input id="go-button" type="image" src="' + goButtonSrc + '" alt="Submit search button" class="ui-corner-right" />');
     jQuery('#go-button').css('vertical-align', '1px');
 
     // Add distance around lateral edges of myIFSTA icon to
     // see menu bar borders.
     var myIconThingy = jQuery('.my_icon');
-    myIconThingy.css('margin-right', '5px');
+    myIconThingy.css('margin-right', '1px');
+
 });
