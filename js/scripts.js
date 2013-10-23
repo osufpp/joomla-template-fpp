@@ -137,7 +137,7 @@ jQuery('.hidden').hide();
     ;
     searchInput.removeClass('ui-corner-all').addClass('ui-corner-left');
     console.log('is it msie? ' + isIE);
-    var goButtonSrc = '/templates/fpp/images/' + (isIE ? 'GoButton_ie.png' : 'GoButton.png');
+    var goButtonSrc = '/templates/fpp/images/' + (isIE ? 'GoButton_ie.png' : (isFF ? 'GoButton_ff.png' : 'GoButton.png'));
     var oldGoButton = jQuery('input[value=Go][type=submit]');
     oldGoButton.replaceWith('<input id="go-button" type="image" src="' + goButtonSrc + '" alt="Submit search button" class="ui-corner-right" />');
     jQuery('#go-button').css('vertical-align', (isIE ? '3px' : (isFF ? '0px' : '1px')));
