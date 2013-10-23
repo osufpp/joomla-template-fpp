@@ -131,7 +131,7 @@ jQuery('.hidden').hide();
                .css('border-right', '0')
                .css('margin', '0')
                .css('padding', '0')
-               .css('vertical-align', (isIE ? '12px' : '11px'))
+               .css('vertical-align', (isIE ? '13px' : '11px'))
                .css('height', '25px')
     ;
     searchInput.removeClass('ui-corner-all').addClass('ui-corner-left');
