@@ -126,6 +126,7 @@ jQuery('.hidden').hide();
 
     // Red-ification of search text field.
     var isIE = !!jQuery.browser.msie;
+    var isFF = !!jQuery.browser.mozilla;
     var searchInput = jQuery('#mod-search-searchword');
     searchInput.css('border', '2px solid rgb(181, 9, 0)')
                .css('border-right', '0')
@@ -139,7 +140,7 @@ jQuery('.hidden').hide();
     var goButtonSrc = '/templates/fpp/images/' + (isIE ? 'GoButton_ie.png' : 'GoButton.png');
     var oldGoButton = jQuery('input[value=Go][type=submit]');
     oldGoButton.replaceWith('<input id="go-button" type="image" src="' + goButtonSrc + '" alt="Submit search button" class="ui-corner-right" />');
-    jQuery('#go-button').css('vertical-align', (isIE ? '3px' : '1px'));
+    jQuery('#go-button').css('vertical-align', (isIE ? '3px' : (isFF ? '0px' : '1px')));
     if (isIE) {
         searchInput.parent().css('margin-top', '33px');
     }
