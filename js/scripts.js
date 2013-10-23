@@ -139,7 +139,10 @@ jQuery('.hidden').hide();
     var goButtonSrc = '/templates/fpp/images/' + (isIE ? 'GoButton_3.png' : 'GoButton.png');
     var oldGoButton = jQuery('input[value=Go][type=submit]');
     oldGoButton.replaceWith('<input id="go-button" type="image" src="' + goButtonSrc + '" alt="Submit search button" class="ui-corner-right" />');
-    jQuery('#go-button').css('vertical-align', '1px');
+    jQuery('#go-button').css('vertical-align', (isIE ? '3px' : '1px'));
+    if (isIE) {
+        searchInput.parent().css('margin-top', '33px');
+    }
 
     // Add distance around lateral edges of myIFSTA icon to
     // see menu bar borders.
