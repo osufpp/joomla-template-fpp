@@ -127,8 +127,6 @@ jQuery('.hidden').hide();
     // Red-ification of search text field.
     var isIE = !!jQuery.browser.msie;
     var isFF = !!jQuery.browser.mozilla;
-    var isWebKit = !!jQuery.browser.webkit;
-    var isChrome = isWebKit;
     var searchInput = jQuery('#mod-search-searchword');
     searchInput.css('border', '2px solid rgb(181, 9, 0)')
                .css('border-right', '0')
@@ -138,24 +136,12 @@ jQuery('.hidden').hide();
                .css('height', '25px')
     ;
     searchInput.removeClass('ui-corner-all').addClass('ui-corner-left');
-//    var goButtonSrc = '/templates/fpp/images/' + (isIE ? 'GoButton_ie.png' : (isFF ? 'GoButton_ff.png' : 'GoButton.png'));
+    console.log('is it msie? ' + isIE);
+    var goButtonSrc = '/templates/fpp/images/' + (isIE ? 'GoButton_ie.png' : (isFF ? 'GoButton_ff.png' : 'GoButton.png'));
     var oldGoButton = jQuery('input[value=Go][type=submit]');
-//    oldGoButton.replaceWith('<input id="go-button" type="image" src="' + goButtonSrc + '" alt="Submit search button" class="ui-corner-right" />');
-    oldGoButton.replaceWith('<input id="go-button" type="submit" alt="Submit search button" class="ui-corner-right" value="GO" />');
-    jQuery('#go-button').css('vertical-align', (isIE ? '10px' : (isFF ? '8px' : (isChrome ? '8px' : '9px'))))
-      .css('height', '29px')
-      .css('font-family', 'Verdana')
-      .css('margin-left', '0')
-      .css('border', '2px solid rgb(181, 9, 0)')
-      .css('border-top-color', 'rgb(232, 80, 49)')
-      .css('border-right-color', 'rgb(221, 49, 40)')
-      .css('border-bottom-color', 'rgb(141, 32, 0)')
-      .css('background-color', 'rgb(181, 9, 0)')
-      .css('color', 'white')
-      .css('font-size', '14pt')
-      .css('font-weight', 'bold')
-;
-    if (isChrome) {
+    oldGoButton.replaceWith('<input id="go-button" type="image" src="' + goButtonSrc + '" alt="Submit search button" class="ui-corner-right" />');
+    jQuery('#go-button').css('vertical-align', (isIE ? '3px' : (isFF ? '0px' : '1px')));
+    if (isIE) {
         searchInput.parent().css('margin-top', '33px');
     }
 
