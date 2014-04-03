@@ -5,6 +5,11 @@ defined('_JEXEC') or die;
 <!DOCTYPE html>
 <html>
 	<head>
+<?php
+if ($_SERVER['REQUEST_URI'] === '/fdic-ipad-giveaway') {
+echo '<meta name="robots" content="noindex">' . "\n";
+}
+?>
 			<jdoc:include type="head" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/960_24_col.css" type="text/css" media="screen,projection" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/stylesheet.css" type="text/css" media="screen,projection" />
