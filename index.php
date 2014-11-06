@@ -9,6 +9,7 @@ defined('_JEXEC') or die;
 if ($_SERVER['REQUEST_URI'] === '/fdic-ipad-giveaway') {
 echo '<meta name="robots" content="noindex">' . "\n";
 }
+$config =& JFactory::getConfig();
 ?>
 			<jdoc:include type="head" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/fpp/css/960_24_col.css" type="text/css" media="screen,projection" />
@@ -28,7 +29,7 @@ echo '<meta name="robots" content="noindex">' . "\n";
             <script type="text/javascript" src="/templates/fpp/js/GA_download_outbound_links.js"></script>
       <script type="text/javascript">
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-11628960-12']);
+        _gaq.push(['_setAccount', '<?php echo $config->getValue('ga_account_id'); ?>']);
         _gaq.push(['_trackPageview']);
 
         (function() {
